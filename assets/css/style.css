@@ -46,6 +46,9 @@ h6 {
     color: var(--bs-gold);
 }
 
+.vh-80 {
+    height: 80vh !important;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -481,7 +484,7 @@ h6 {
 
 #hero:before {
     content: "";
-    background: var(--bs-yesil-4);
+    background: var(--bs-yesil-6);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -780,14 +783,14 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about {
+.welcome {
     background: url("../img/about-bg.jpg") center center;
     background-size: cover;
     position: relative;
     padding: 80px 0;
 }
 
-.about:before {
+.welcome:before {
     content: "";
     background: var(--bs-yesil);
     position: absolute;
@@ -797,18 +800,18 @@ section {
     right: 0;
 }
 
-.about .about-img {
+.welcome .about-img {
     position: relative;
     transition: .5s;
 }
 
-.about .about-img img {
+.welcome .about-img img {
     max-width: 100%;
     border: 4px solid rgba(255, 255, 255, 0.2);
     position: relative;
 }
 
-.about .about-img::before {
+.welcome .about-img::before {
     position: absolute;
     left: 20px;
     top: 20px;
@@ -821,7 +824,7 @@ section {
     transition: .5s;
 }
 
-.about .about-img::after {
+.welcome .about-img::after {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -834,46 +837,46 @@ section {
     transition: .5s;
 }
 
-.about .about-img:hover {
+.welcome .about-img:hover {
     transform: scale(1.03);
 }
 
-.about .about-img:hover::before {
+.welcome .about-img:hover::before {
     left: 10px;
     top: 10px;
 }
 
-.about .about-img:hover::after {
+.welcome .about-img:hover::after {
     right: 10px;
     bottom: 10px;
 }
 
-.about .content h3 {
+.welcome .content h3 {
     font-weight: 600;
     font-size: 26px;
 }
 
-.about .content ul {
+.welcome .content ul {
     list-style: none;
     padding: 0;
 }
 
-.about .content ul li {
+.welcome .content ul li {
     padding-bottom: 10px;
 }
 
-.about .content ul i {
+.welcome .content ul i {
     font-size: 20px;
     padding-right: 4px;
     color: #cda45e;
 }
 
-.about .content p:last-child {
+.welcome .content p:last-child {
     margin-bottom: 0;
 }
 
 @media (min-width: 1024px) {
-    .about {
+    .welcome {
         background-attachment: fixed;
     }
 }
