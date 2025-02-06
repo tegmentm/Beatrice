@@ -3,7 +3,10 @@
     --bs-yesil-4: rgba(24, 54, 56, .4);
     --bs-yesil-6: rgba(24, 54, 56, .6);
     --bs-yesil-8: rgba(24, 54, 56, .8);
+    --bs-yesil-9: rgba(24, 54, 56, .9);
     --bs-yesil: rgba(24, 54, 56, 1);
+    --bs-gold: rgba(205, 164, 94, 1);
+    
 }
 
 
@@ -37,6 +40,10 @@ h4,
 h5,
 h6 {
     font-family: "Playfair Display", serif;
+}
+
+.text-gold {
+    color: var(--bs-gold);
 }
 
 /*--------------------------------------------------------------
@@ -196,8 +203,8 @@ h6 {
 
 #header.header-scrolled {
     top: 0;
-    background: rgba(0, 0, 0, 0.85);
-    border-bottom: 1px solid #37332a;
+    background: var(--bs-yesil-9);
+    border-bottom: 1px solid var(--bs-yesil);
 }
 
 #header .logo {
@@ -782,7 +789,7 @@ section {
 
 .about:before {
     content: "";
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--bs-yesil);
     position: absolute;
     bottom: 0;
     top: 0;
