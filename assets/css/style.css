@@ -53,6 +53,103 @@ h6 {
 .min-vh-80 {
     min-height: 80vh !important;
 }
+
+.h1-large {
+    font-size: 3.75rem;
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.rotate-title-left {
+    position: absolute;
+    left: 0; /* Sol kenara yapış */
+    top: 50%; /* Ortaya al */
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center center;
+    white-space: nowrap;
+    overflow: visible;
+    padding: 10px; /* Kenar kesilmelerini önlemek için padding ekledik */
+}
+
+.rotate-title-right {
+    position: absolute;
+    right: 0; /* Sağ kenara yapış */
+    top: 50%; /* Ortaya al */
+    transform: translate(50%, -50%) rotate(90deg);
+    transform-origin: center center;
+    white-space: nowrap;
+    overflow: visible;
+    padding: 10px; /* Kenar kesilmelerini önlemek için padding ekledik */
+}
+
+
+
+.bg-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-hover::before,
+.bg-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  z-index: -1; /* Arkaplanın başlığın altında kalmasını sağlar */
+}
+
+.bg-hover::before {
+  opacity: 1;
+}
+
+.bg-hover::after {
+  opacity: 0;
+}
+
+.bg-hover:hover::after {
+  opacity: 1;
+}
+
+.bg-hover:hover::before {
+  opacity: 0;
+}
+
+/* 1. Div için özel arkaplan */
+.bg-1::before {
+  background-image: url('/assets/img/bg-plate.png');
+}
+.bg-1::after {
+  background-image: url('/assets/img/bg-plate-color.png');
+}
+
+/* 2. Div için özel arkaplan */
+.bg-2::before {
+  background-image: url('/assets/img/bg-vine.png');
+}
+.bg-2::after {
+  background-image: url('/assets/img/bg-vine-color.png');
+}
+
+.border-green {
+    border-color: var(--bs-yesil) !important;
+}
+
+.border-gold {
+    border-color: var(--bs-gold) !important;
+}
+
+
+
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1100,7 +1197,7 @@ section {
 
 .events::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--bs-yesil-8);
     position: absolute;
     top: 0;
     right: 0;
