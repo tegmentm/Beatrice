@@ -58,6 +58,10 @@ h6 {
     font-size: 3.75rem;
 }
 
+.bg-yesil {
+    background-color: var(--bs-yesil);
+}
+
 
 /*--------------------------------------------------------------
 # Services
