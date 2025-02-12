@@ -62,6 +62,11 @@ h6 {
     background-color: var(--bs-yesil);
 }
 
+.swiper-slide img {
+            width: 100%;
+            cursor: pointer;
+        }
+
 
 /*--------------------------------------------------------------
 # Services
