@@ -57,7 +57,6 @@
                     <li><a class="nav-link scrollto active" href="#hero">Anasayfa</a></li>
                     <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
                     <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-                    <li><a class="nav-link scrollto" href="#specials">Spesiyaller</a></li>
                     <li><a class="nav-link scrollto" href="#events">Etkinlikler</a></li>
                     <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
                     <li><a class="nav-link scrollto" href="#contact">İletişim</a></li>
@@ -89,7 +88,7 @@
     <main id="main">
 
         <!-- ======= Welcome Section ======= -->
-        <section id="welcome" class="welcome vh-80 d-flex align-items-center">
+        <section id="about" class="welcome vh-80 d-flex align-items-center">
             <div class="container" data-aos="fade-up">
                 <div class="section-title col-lg-8 mx-auto">
                     <h2>HOŞGELDİNİZ</h2>
@@ -111,7 +110,7 @@
 
 
         <!-- ======= Sevices Section ======= -->
-        <section id="services" class="services section-bg">
+        <!--<section id="services" class="services section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="row min-vh-80">
                     <div class="col-6 position-relative d-flex align-items-center justify-content-start bg-hover bg-1 border-end border-green overflow-visible">
@@ -123,8 +122,35 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- End Services Section -->
+
+
+
+
+
+
+        <!-- Services Section -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="row min-vh-80">
+                    <div class="col-12 col-md-6 position-relative d-flex align-items-center justify-content-start bg-hover bg-1 border-end border-green overflow-visible">
+                        <h1 class="text-gold rotate-title-left h1-large">Restaurant</h1>
+                    </div>
+
+                    <div class="col-12 col-md-6 position-relative d-flex align-items-center justify-content-end bg-hover bg-2 border-start border-gold overflow-visible">
+                        <h1 class="text-gold rotate-title-right h1-large">Bar</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
 
 
         <!-- ======= Events Section ======= -->
@@ -258,7 +284,7 @@
                     <h2>Reservasyon</h2>
                     <p>Yerinizi Ayırtın</p>
                 </div>
-                
+
                 <div class="row">
                     <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content mx-auto d-flex flex-column justify-content-center align-items-center">
                         <h3 class="text-center">Rezervasyon Telefonumuz:</h3>
@@ -281,9 +307,9 @@
             </div>
 
             <div data-aos="fade-up">
-               
+
                 <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.823007831721!2d28.970693075775515!3d41.02912801814112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7edb60137%3A0x6f6e7f9b62b8e508!2sB%C3%A9atrice%20Restaurant!5e0!3m2!1str!2str!4v1739460083770!5m2!1str!2str" frameborder="0" allowfullscreen></iframe>
-                
+
             </div>
 
             <div class="container" data-aos="fade-up">
@@ -317,40 +343,44 @@
 
                     </div>
 
-                    <div class="col-lg-6 mt-5 mt-lg-0">
-                       <div class="info">
-                           <i class="bi bi-signpost-fill"></i>
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-md-none">
+                        <div class="info">
+                            <i class="bi bi-signpost-fill"></i>
                             <h4>Rota Oluşturuldu</h4>
                             <p>Navigasyon Uygulamanızı Seçin, Rotanız Oluşturulsun</p>
-                       </div>
-                       <div class="row mt-3 py-3 border border-gold">
-                          
-                           <div class="col-4"><!-- Google Maps Navigation -->
-                              <div class="bg-holder bg-light mx-1">
-                                  <a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=İlter's+Coffee" class="navButton" id="nav-button-google-maps" >
-                                    <img src="/assets/img/google-maps-s.png" class="img-fluid" alt="">
-                               </a>
-                              </div>
-                               
-                           </div>
-                           
-                           <div class="col-4"><!-- Yandex Maps Navigation -->
-                               <div class="bg-holder bg-light mx-1">
-                                <a href="yandexmaps://maps.yandex.com/?rtext=ymapsbm1://geo?ll=28.950168,41.030343&pt=28.950168,41.030343,Ä°lter's Coffee" class="navButton" id="nav-button-yandex-haritalar" >
-                                    <img src="/assets/img/yandex-haritalar-s.png" class="img-fluid" alt="">
-                                </a>
-                               </div>
+                        </div>
+                        <div class="row mt-3 py-3 border border-gold">
+
+                            <div class="col-4">
+                                <!-- Google Maps Navigation -->
+                                <div class="bg-holder bg-light mx-1">
+                                    <a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=Béatrice+Restaurant,+Teras+Katı,+Asmalı+Mescit,+General+Yazgan+Sk.+No:+14,+34430+Beyoğlu%2Fİstanbul" class="navButton" id="nav-button-google-maps" target="_blank">
+                                        <img src="/assets/img/google-maps-s.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+
                             </div>
-                            
-                            <div class="col-4"><!-- Yandex Navi Navigation -->
-                               <div class="bg-holder bg-light mx-1">
-                                <a href="yandexnavi://build_route_on_map?lat_to=41.030343&lon_to= 28.950168" class="navButton" id="nav-button-yandex-navigasyon" >
-                                    <img src="assets/img/yandex-navigasyon-s.png" class="img-fluid" alt="">
-                                </a>
+
+                            <div class="col-4">
+                                <!-- Yandex Maps Navigation -->
+                                <div class="bg-holder bg-light mx-1">
+                                    <a href="yandexmaps://maps.yandex.com/?rtext=ymapsbm1://geo?ll=28.923184%2C41.032951&pt=41.029125%2C28.973269,Beatrice Restaurant" class="navButton" id="nav-button-yandex-haritalar">
+
+                                        <img src="/assets/img/yandex-haritalar-s.png" class="img-fluid" alt="">
+                                    </a>
                                 </div>
                             </div>
-                            
-                       </div>
+
+                            <div class="col-4">
+                                <!-- Yandex Navi Navigation -->
+                                <div class="bg-holder bg-light mx-1">
+                                    <a href="yandexnavi://build_route_on_map?lat_to=41.029125&lon_to=28.973269" class="navButton" id="nav-button-yandex-navigasyon">
+                                        <img src="assets/img/yandex-navigasyon-s.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -402,19 +432,19 @@
     <script src="assets/js/main.js"></script>
 
 
-   <!-- Gallery Adjustments -->
+    <!-- Gallery Adjustments -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
+            slidesPerView: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
         });
 
         let isDragging = false;
@@ -438,14 +468,14 @@
         });
 
         function handleClick(event, src) {
-        event.preventDefault(); // Tarayıcının varsayılan davranışını engelle
+            event.preventDefault(); // Tarayıcının varsayılan davranışını engelle
 
-        // Modal içindeki resmin src'sini güncelle
-        document.getElementById("modalImage").src = src;
+            // Modal içindeki resmin src'sini güncelle
+            document.getElementById("modalImage").src = src;
 
-        // Bootstrap modalını aç
-        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-        modal.show();
+            // Bootstrap modalını aç
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            modal.show();
         }
     </script>
 

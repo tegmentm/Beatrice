@@ -133,18 +133,18 @@ h6 {
 
 /* 1. Div için özel arkaplan */
 .bg-1::before {
-  background-image: url('/assets/img/bg-plate.png');
+  background-image: url('../img/bg-plate.png');
 }
 .bg-1::after {
-  background-image: url('/assets/img/bg-plate-color.png');
+  background-image: url('../img/bg-plate-color.png');
 }
 
 /* 2. Div için özel arkaplan */
 .bg-2::before {
-  background-image: url('/assets/img/bg-vine.png');
+  background-image: url('../img/bg-vine.png');
 }
 .bg-2::after {
-  background-image: url('/assets/img/bg-vine-color.png');
+  background-image: url('../img/bg-vine-color.png');
 }
 
 .border-green {
@@ -154,6 +154,101 @@ h6 {
 .border-gold {
     border-color: var(--bs-gold) !important;
 }
+
+
+
+
+
+
+
+
+/* Mobil cihazlar için stil düzenlemeleri */
+@media (max-width: 768px) {
+    #services .row {
+        flex-direction: column; /* Sütunları dikey hale getir */
+    }
+
+    #services .col-6 {
+        width: 100%; /* Her bir sütunun genişliğini %100 yap */
+        border: none !important; /* Kenarlıkları kaldır */
+    }
+
+    #services .rotate-title-left,
+    #services .rotate-title-right {
+        position: static; /* Başlıkları normal pozisyona getir */
+        transform: none; /* Döndürme efektini kaldır */
+        white-space: normal; /* Metin kaymasını engelle */
+        text-align: center; /* Metni ortala */
+        font-size: 2rem; /* Başlık boyutunu küçült */
+        margin: 20px 0; /* Başlıklar arasına boşluk ekle */
+    }
+
+    #services .bg-hover::before,
+    #services .bg-hover::after {
+        opacity: 1; /* Hover efektini mobilde devre dışı bırak */
+    }
+
+    #services .bg-hover:hover::before,
+    #services .bg-hover:hover::after {
+        opacity: 1; /* Hover efektini mobilde devre dışı bırak */
+    }
+}
+
+@media (max-width: 768px) {
+    #services .bg-hover::before,
+    #services .bg-hover::after {
+        opacity: 1; /* Hover efektini mobilde devre dışı bırak */
+    }
+
+    #services .bg-hover:hover::before,
+    #services .bg-hover:hover::after {
+        opacity: 1; /* Hover efektini mobilde devre dışı bırak */
+    }
+}
+
+@media (max-width: 768px) {
+    #services .rotate-title-left {
+        font-size: 2rem; /* Başlık boyutunu küçült */
+        text-align: left !important;
+        margin: 20px 0; /* Başlıklar arasına boşluk ekle */
+    }
+    
+    #services .rotate-title-right {
+        font-size: 2rem; /* Başlık boyutunu küçült */
+        text-align: right !important;
+        margin: 20px 0; /* Başlıklar arasına boşluk ekle */
+    }
+}
+
+@media (max-width:768px) {
+    .bg-1,
+    .bg-2 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    .bg-1 {
+        background-image: url('../img/bg-plate.png');
+        background-position: right center;
+    }
+
+    .bg-2 {
+        background-image: url('../img/bg-vine.png');
+        background-position: left center;
+    }
+
+    .bg-1::before,
+    .bg-1:after,
+    .bg-2::before,
+    .bg-2:after {
+        background: none;
+    }
+}
+
+
+
+
+
 
 
 
