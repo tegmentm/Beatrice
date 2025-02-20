@@ -453,7 +453,7 @@ h6 {
     border-bottom: 1px solid var(--bs-yesil-8);
     transition: all 0.5s;
     z-index: 997;
-    padding: 15px 0;
+    padding: 5px 0;
     top: 40px;
 }
 
@@ -479,7 +479,7 @@ h6 {
 }
 
 #header .logo img {
-    max-height: 40px;
+    max-height: 60px;
 }
 
 /*--------------------------------------------------------------
